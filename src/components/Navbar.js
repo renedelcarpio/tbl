@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import '../styles/Navbar.css'
 import { MenuItems } from './MenuItems'
@@ -16,7 +17,7 @@ class Navbar extends React.Component {
             <>
                 <nav className='NavbarItems'>
                     <img className='navbar-img' src={ tblLogo } alt=""/>
-                    <h1 className='navbar-logo'>Thunderbolt-labs</h1>
+                    <h1 className='navbar-logo'><Link className='navbar-logo' to="/">Thunderbolt-labs</Link></h1>
                     <div className='menu-icon' onClick={ this.handleClick }>
                         <i className={ this.state.clicked ? 'fas fa-times' : 'fas fa-bars' }></i>
                     </div>
@@ -24,9 +25,9 @@ class Navbar extends React.Component {
                         { MenuItems.map((item, index) => {
                             return(
                                 <li key={ index }>
-                                    <a className={ item.cName } href={ item.url }>
+                                    <Link className={ item.cName } to={ item.url }>
                                         { item.title }
-                                    </a>
+                                    </Link>
                                 </li>
                             )
                         }) }

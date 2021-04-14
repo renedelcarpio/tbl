@@ -1,0 +1,13 @@
+.main__image-container {
+    position: flex;
+    width: 100vw;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.home-image {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: .5rem;
+}
