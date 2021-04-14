@@ -1,0 +1,31 @@
+.badge__main-container {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: #d8a16b;
+    border-radius: 2rem;
+}
+
+.badge__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.badge__image {
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.badge__description-container {
+    padding: 3rem;
+}
+
+.badge__title {
+    font-weight: bold;
+    color: #8f4528;
+    font-size: 5rem;
+}

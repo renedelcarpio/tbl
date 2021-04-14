@@ -16,7 +16,8 @@
     justify-self: start;
     margin-left: 0.5rem;
     cursor: pointer;
-    font-weight: 700 ;
+    font-weight: 700;
+    transition: all 0.2s ease-out;
 }
 
 .navbar-logo:hover {
@@ -119,6 +120,10 @@
         top: 0;
         left: 0;
         transform: translate(25%, 50%);
+    }
+
+    .navbar-logo-link {
+        font-size: 1.8rem;
     }
 
     .menu-icon {
