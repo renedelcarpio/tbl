@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, ReactRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Layout from './Layout'
 import Home from '../pages/Home'
