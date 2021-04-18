@@ -6,11 +6,9 @@ import '../styles/Contact.css'
 function Contact() {
     return (
         <>
-            <div className='main__map-container'>
-                <Map/>
-            </div>
+            <Map />
             <div>
-                <h1>Formulario y redes sociales</h1>
+                <h1>Síguenos en nuestras redes sociales:</h1>
             </div>
         </>
     )
