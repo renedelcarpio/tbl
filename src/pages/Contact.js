@@ -6,8 +6,10 @@ import '../styles/Contact.css'
 function Contact() {
     return (
         <>
-            <Map />
-            <div>
+            <div className='map-container'>
+                <Map />
+            </div>
+            <div className='social-media-container'>
                 <h1>Síguenos en nuestras redes sociales:</h1>
             </div>
         </>
