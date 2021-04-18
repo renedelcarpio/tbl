@@ -1,4 +1,12 @@
 .map-container {
-    width: 50%;
+    width: 80rem;
     height: 100%;
+}
+
+.social-media-container {
+    position: absolute;
+    margin-left: 85rem;
+    margin-top: -30rem;
+    z-index: 20;
+    color: #d8a16b;
 }

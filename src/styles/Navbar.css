@@ -15,6 +15,7 @@
     color: #323232;
     justify-self: start;
     margin-left: 0.5rem;
+    margin-top: 0.8rem;
     cursor: pointer;
     font-weight: 700;
     transition: all 0.2s ease-out;
@@ -117,6 +118,7 @@
 
     .navbar-logo {
         position: absolute;
+        width: 15rem;
         top: 0;
         left: 0;
         transform: translate(25%, 50%);
