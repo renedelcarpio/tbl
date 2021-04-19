@@ -8,10 +8,7 @@ function AboutUs() {
         <div className='about__main-container'>
             <div className='about__image-container' >
                 <img className='about__image' src={ labrador2 } alt="Foto de un labrador"/>
-            </div>
-            <div className='about__description-container'>
                 <h1 className='about__title'>Thunderbolt-labs</h1>
-                <h3 className='about__pedigree'>Quienes somos</h3>
                 <p className='about__about-dog'>
                     Nuestra familia lleva más de cinco años criando esta maravillosa raza y compartiendo con ellos muchas alegrías, tanto en competencias como sabiendo que son pilares en sus hogares, donde son cuidados con mucho amor.
                 </p>

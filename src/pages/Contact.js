@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import Map from '../components/Map'
 import '../styles/Contact.css'
