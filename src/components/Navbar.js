@@ -17,7 +17,7 @@ class Navbar extends React.Component {
             <>
                 <nav className='NavbarItems'>
                     <img className='navbar-img' src={ tblLogo } alt=""/>
-                    <h1 className='navbar-logo'><Link className='navbar-logo navbar-logo-link' to="/">Thunderbolt-labs</Link></h1>
+                    <h1 className='navbar-logo'><Link className='navbar-logo navbar-logo-link' to="/">Thunderbolt-Labs</Link></h1>
                     <div className='menu-icon' onClick={ this.handleClick }>
                         <i className={ this.state.clicked ? 'fas fa-times' : 'fas fa-bars' }></i>
                     </div>

@@ -3,7 +3,7 @@
     width: 80vw;
     margin: auto;
     margin-top: 2rem;
-    background-color: #d8a16b;
+    background-color: #527da8;
     border-radius: 2rem;
 }
 
@@ -26,15 +26,47 @@
 
 .badge__title {
     font-weight: bold;
-    color: #8f4528;
+    color: #e7eff5;
     font-size: 5rem;
 }
 
 .badge__pedigree {
     font-size: 2.5rem;
-    color: #323232;
+    color: #e7eff5;
 }
 
 .badge__about-dog {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .badge__main-container {
+        flex-wrap: wrap;
+    }
+
+    .badge__image-container {
+        margin: auto;
+    }
+
+    .badge__description-container {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .badge__title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .badge__image {
+        width: 22rem;
+    }
+
+    .badge__title {
+        font-size: 3.5rem;
+    }
+
+    .badge__pedigree {
+        font-size: 2rem;
+    }
 }
