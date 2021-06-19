@@ -6,7 +6,7 @@
 
 html {
 	font-size: 62.5%;
-	background-color: #fff;
+	background-color: #f3f3f4;
 	font-family: 'Ubuntu', sans-serif;
 }
 
@@ -15,4 +15,5 @@ body {
 	display: flex;
 	text-align: center;
 	justify-content: center;
+	max-height: 100vh;
 }
