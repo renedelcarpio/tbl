@@ -12,21 +12,24 @@ const ImageContainer = styled.div`
 	margin-bottom: 3rem;
 	border-radius: 10px;
 	width: 80%;
-	max-height: 90rem;
+	max-height: 82%;
 	overflow: hidden;
 	box-shadow: 0.3rem 0.5rem 0.5rem #888888;
 
 	@media (max-width: 1025px) {
-		margin: auto;
+		margin-top: 8rem;
+		margin-bottom: 7rem;
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 900px) {
+		margin-top: 14rem;
+		margin-bottom: 14rem;
 		max-width: 60rem;
 	}
 
 	@media (max-width: 450px) {
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+		margin-top: 12.5rem;
+		margin-bottom: 12.5rem;
 		max-width: 40rem;
 		max-height: 69rem;
 	}
