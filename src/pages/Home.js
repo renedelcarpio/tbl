@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import wideImage from '../images/manada.jpg';
 import tallImage from '../images/labrador.jpg';
+import theme from '../theme';
 
 const ImageContainer = styled.div`
 	display: flex;
@@ -14,7 +15,7 @@ const ImageContainer = styled.div`
 	width: 80%;
 	max-height: 82%;
 	overflow: hidden;
-	box-shadow: 0.3rem 0.5rem 0.5rem #888888;
+	box-shadow: 0.3rem 0.5rem 0.5rem ${theme.shadow};
 
 	@media (max-width: 1025px) {
 		margin-top: 8rem;

@@ -9,6 +9,7 @@ import '../styles/Navbar.css';
 const NavBar = styled.nav`
 	display: flex;
 	justify-content: space-between;
+	background: ${theme.white};
 	align-items: center;
 	box-shadow: 0.1rem 0.5rem 1rem ${theme.shadow};
 	max-height: 8rem;
@@ -92,34 +93,32 @@ const Navbar = () => {
 	};
 
 	return (
-		<>
-			<NavBar>
-				<LogoNameContainer>
-					<ThunderboltLogo src={tblLogo} alt='' />
-					<Link to='/'>
-						<ThunderboltTitle>Thunderbolt-Labs</ThunderboltTitle>
-					</Link>
-				</LogoNameContainer>
-				<BurgerMenuContainer onClick={handleClick}>
-					<BurgerMenu
-						className={openMenu === false ? 'fas fa-times' : 'fas fa-bars'}
-					></BurgerMenu>
-				</BurgerMenuContainer>
-				<Menu>
-					{window.screen.width > 800 && openMenu === true}
-					{openMenu === false &&
-						MenuItems.map((item, index) => {
-							return (
-								<List key={index}>
-									<Link className={item.cName} to={item.url}>
-										{item.title}
-									</Link>
-								</List>
-							);
-						})}
-				</Menu>
-			</NavBar>
-		</>
+		<NavBar>
+			<LogoNameContainer>
+				<ThunderboltLogo src={tblLogo} alt='' />
+				<Link to='/'>
+					<ThunderboltTitle>Thunderbolt-Labs</ThunderboltTitle>
+				</Link>
+			</LogoNameContainer>
+			<BurgerMenuContainer onClick={handleClick}>
+				<BurgerMenu
+					className={openMenu === false ? 'fas fa-times' : 'fas fa-bars'}
+				></BurgerMenu>
+			</BurgerMenuContainer>
+			<Menu>
+				{window.screen.width > 800 && openMenu === true}
+				{openMenu === false &&
+					MenuItems.map((item, index) => {
+						return (
+							<List key={index}>
+								<Link className={item.cName} to={item.url}>
+									{item.title}
+								</Link>
+							</List>
+						);
+					})}
+			</Menu>
+		</NavBar>
 	);
 };
 

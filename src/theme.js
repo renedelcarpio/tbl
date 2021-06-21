@@ -5,6 +5,7 @@ const theme = {
 	pink: '#d30c7b',
 	shadow: '#888888',
 	black: '#141414',
+	bone: '#ebebeb',
 };
 
 export default theme;
