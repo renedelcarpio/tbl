@@ -16,9 +16,13 @@ const FooterContainer = styled.div`
 
 const FooterText = styled.h5`
 	background: ${theme.white};
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 
-	@media (max-width: 800px) {
+	@media (max-width: 900px) {
+		font-size: 1.2rem;
+	}
+
+	@media (max-width: 450px) {
 		font-size: 0.8rem;
 	}
 `;

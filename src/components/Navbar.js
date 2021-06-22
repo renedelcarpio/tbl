@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MenuItems } from './MenuItems';
+import { MenuItems } from '../elements/menuItems';
 import tblLogo from '../images/tbl_sin_fondo.png';
 import styled from 'styled-components';
 import theme from '../theme';
@@ -42,6 +42,7 @@ const ThunderboltTitle = styled.h1`
 
 	&:hover {
 		color: ${theme.pink};
+		text-decoration: none;
 	}
 `;
 

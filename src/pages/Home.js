@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import wideImage from '../images/manada.jpg';
-import tallImage from '../images/labrador.jpg';
+import tallImage from '../images/labrador1.jpg';
 import theme from '../theme';
 
 const ImageContainer = styled.div`
@@ -18,7 +18,7 @@ const ImageContainer = styled.div`
 	box-shadow: 0.3rem 0.5rem 0.5rem ${theme.shadow};
 
 	@media (max-width: 1025px) {
-		margin-top: 8rem;
+		margin-top: 6.5rem;
 		margin-bottom: 7rem;
 	}
 

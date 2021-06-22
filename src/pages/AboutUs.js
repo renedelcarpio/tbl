@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import labrador2 from '../images/labrador2.jpg';
+import labrador6 from '../images/labrador6.jpg';
 import theme from '../theme';
 
 const AboutContainer = styled.div`
@@ -19,8 +19,12 @@ const AboutContainer = styled.div`
 const ImageContainer = styled.div`
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	width: 50%;
+	width: 36%;
 	border-radius: 5px;
+
+	@media (max-width: 900px) {
+		width: 80%;
+	}
 `;
 
 const AboutUsImage = styled.img`
@@ -29,44 +33,63 @@ const AboutUsImage = styled.img`
 `;
 
 const ContentContainer = styled.div`
-	width: 80%;
+	width: 65%;
+
+	@media (max-width: 1025px) {
+		width: 90%;
+	}
 `;
 
 const Title = styled.h1`
 	font-size: 5rem;
 	font-weight: bold;
 	color: ${theme.purple};
+
+	@media (max-width: 900px) {
+		font-size: 3.5rem;
+	}
+
+	@media (max-width: 450px) {
+		font-size: 3rem;
+	}
 `;
 
 const Info = styled.p`
 	font-size: 2rem;
+	margin-bottom: 2rem;
+
+	@media (max-width: 900px) {
+		font-size: 1.5rem;
+	}
 `;
 
 function AboutUs() {
 	return (
 		<AboutContainer>
 			<ImageContainer className='about__image-container'>
-				<AboutUsImage src={labrador2} alt='Foto de un labrador' />
+				<AboutUsImage src={labrador6} alt='Foto de un labrador' />
 			</ImageContainer>
 			<ContentContainer>
 				<Title>Thunderbolt-Labs</Title>
 				<Info>
+					Un criador es quien con amor y dedicación, vela por el bienestar de
+					sus ejemplares. No olvidemos que los animales necesitan mucha
+					dedicación ya que ellos son como niños pequeños, seres llenos de amor,
+					y lealtad infinita.
+				</Info>
+				<Info>
 					Nuestra familia lleva más de cinco años criando esta maravillosa raza
-					y compartiendo con ellos muchas alegrías, tanto en competencias como
-					sabiendo que son pilares en sus hogares, donde son cuidados con mucho
-					amor.
+					y compartiendo con ellos muchas alegrías, tanto en las competencias en
+					las que participamos como en los hogares a los que van nuestros
+					cachorros, donde sin lugar a dudas dan y reciben amor.
 				</Info>
 				<Info>
-					Un criador no es algien que tiene 60 perros en un lugar sin espacio,
-					criando en todos los celos, es un delincuente, no un criador.
-				</Info>
-				<Info>
-					La realidad es que un buen criador se preocupa por la salud y
-					bienestar de sus perros. Un criador busca la familia idónea para
-					conformar un hogar que les brinde seguridad y al mismo tiempo
-					compartar una vida de alegría. Un criador siempre estará pendiente de
-					cada cachorro o adulto así esté en otro hogar para tener la seguridad
-					que es bien cuidado.
+					Nosotros, como buenos criadores nos preocupamos por la salud y
+					bienestar de nuestros ejemplares, buscamos la familia idónea que les
+					brinde seguridad y con la que puedan compartir una vida llena de
+					alegría. Un buen criador siempre estará pendiente de sus ejemplares,
+					no importa dónde se encuentren o qué edad tengan, porque nuestras
+					mascotas merecen siempre lo mejor.
 				</Info>
 			</ContentContainer>
 		</AboutContainer>
