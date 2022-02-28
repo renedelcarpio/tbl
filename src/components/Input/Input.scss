@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.input {
+  background-color: rgba($color-dark, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  &:focus {
+    outline: none;
+    border-bottom: 0.1rem solid $color-secondary;
+  }
+}
+
+.input__label {
+  color: $color-primary;
+  margin-bottom: 0.5rem;
+}

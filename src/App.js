@@ -6,6 +6,7 @@ import Dogs from '../src/pages/Dogs/Dogs';
 import Edit from '../src/pages/Edit/Edit';
 import Home from '../src/pages/Home/Home';
 import Layout from './components/Layout/Layout';
+import Login from '../src/pages/Login/Login';
 import Puppies from '../src/pages/Puppies/Puppies';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 					<Route exact path='/puppies' component={Puppies} />
 					<Route exact path='/contact' component={Contact} />
 					<Route exact path='/edit' component={Edit} />
+					<Route exact path='/login' component={Login} />
 				</Switch>
 			</Layout>
 		</BrowserRouter>

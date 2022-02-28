@@ -24,3 +24,16 @@
     max-width: 80rem;
   }
 }
+
+@media (max-width: 700px){
+  .home {
+    flex-direction: column-reverse;
+  }
+  .home__title {
+    position: relative;
+    background-color: transparent;
+    color: $color-secondary;
+    font-size: 4rem;
+    margin-top: 0;
+  }
+}

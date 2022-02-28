@@ -2,10 +2,16 @@ import './Navbar.scss';
 
 import Button from '../Button/Button';
 import TBLImage from '../../images/tbl_sin_fondo.png';
+import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
 const Navbar = () => {
 	const [isMobile, setIsMobile] = useState(false);
+	const history = useHistory();
+
+	const handleClick = () => {
+		history.push('/login');
+	};
 
 	return (
 		<div className='navbar'>
@@ -43,7 +49,9 @@ const Navbar = () => {
 					</a>
 				</li>
 				<li className='navbar__item'>
-					<Button className={'btn btn-primary'}>Login</Button>
+					<Button className={'btn btn-primary'} onClick={handleClick}>
+						Login
+					</Button>
 				</li>
 			</ul>
 			<button
