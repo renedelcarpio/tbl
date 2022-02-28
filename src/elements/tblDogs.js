@@ -1,11 +1,6 @@
-import labrador1 from '../images/labrador1.jpg';
-import labrador2 from '../images/labrador2.jpeg';
-import labrador3 from '../images/labrador3.jpeg';
-import labrador4 from '../images/labrador4.jpg';
-import labrador5 from '../images/labrador5.jpeg';
 export const tblDogs = [
 	{
-		photo: labrador1,
+		photo: '',
 		name: 'Chicotazo',
 		pedigree: 'INDIGO RETRIEVER JAMES FRANCO',
 		gender: 'Macho',
@@ -16,7 +11,7 @@ export const tblDogs = [
 		},
 	},
 	{
-		photo: labrador2,
+		photo: '',
 		name: 'Claid',
 		pedigree: 'DUBROVINKS CLAID',
 		gender: 'Macho',
@@ -29,7 +24,7 @@ export const tblDogs = [
 		},
 	},
 	{
-		photo: labrador3,
+		photo: '',
 		name: 'Hulk',
 		pedigree: 'BLACK OKTO ANGUIANO',
 		gender: 'Macho',
@@ -39,7 +34,7 @@ export const tblDogs = [
 		},
 	},
 	{
-		photo: labrador4,
+		photo: '',
 		name: 'Yanga',
 		pedigree: 'YANGA ANGUIANO',
 		gender: 'Hembra',
@@ -50,7 +45,7 @@ export const tblDogs = [
 		},
 	},
 	{
-		photo: labrador5,
+		photo: '',
 		name: 'Dalla',
 		pedigree: 'DALLA THUNDERBOLT-LABS',
 		gender: 'Hembra',

@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  border-top: 0.1rem solid $color-primary;
+
+  &__info {
+    font-size: 1.2rem;
+    color: $color-primary;
+  }
+}

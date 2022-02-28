@@ -1,9 +1,0 @@
-a {
-	font-weight: bold;
-	color: #527;
-}
-
-a:hover {
-	color: #d30c7b;
-	transform: scale(1.15);
-}

@@ -1,0 +1,95 @@
+@import '../../index.scss';
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0rem 0.1rem 1rem $color-primary;
+  width: 100vw;
+  height: 4rem;
+  z-index: 100;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 2.5rem;
+  }
+
+  &__name {
+    color: $color-dark;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__link {
+    color: $color-primary;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__mobile--icon {
+    background-color: transparent;
+    border: none;
+    color: $color-primary;
+    font-size: 2rem;
+    display: none;
+
+  }
+}
+
+@media (max-width: 550px){
+  .navbar__mobile--icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navbar__name {
+    font-size: 1.5rem;
+  }
+
+  .navbar__list {
+    display: none;
+  }
+
+  .navbar__list--mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: $color-light;
+    box-shadow: 0rem 0.1rem 1rem $color-primary;
+    top: 4rem;
+    width: 100%;
+  }
+
+  .navbar__item {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .navbar__link {
+    font-size: 2rem;
+  }
+}
